@@ -63,8 +63,8 @@ installbbr() {
         detele_kernel_head
         #headurl=$(curl -s 'https://api.github.com/repos/ylx2016/kernel/releases' | grep ${github_tag} | grep 'rpm' | grep 'headers' | awk -F '"' '{print $4}')
         #imgurl=$(curl -s 'https://api.github.com/repos/ylx2016/kernel/releases' | grep ${github_tag} | grep 'rpm' | grep -v 'headers' | grep -v 'devel' | awk -F '"' '{print $4}')
-        headurl=https://git.huaweicdn.net/packages/kernel-headers-${kernel_version}-1.x86_64.rpm
-        imgurl=https://git.huaweicdn.net/packages/kernel-${kernel_version}-1.x86_64.rpm
+        headurl=https://lian8306.github.io/kernel-headers-5.14.10-1.x86_64.rpm
+        imgurl=https://lian8306.github.io/kernel-5.14.10-1.x86_64.rpm
         echo -e "正在检查headers下载连接...."
         checkurl $headurl
         echo -e "正在检查内核下载连接...."
